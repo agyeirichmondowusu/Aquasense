@@ -26,7 +26,8 @@ ESP32 processes and transmits data.
 The SVM model predicts whether irrigation is needed.
 Relay is triggered to turn the water pump ON/OFF accordingly.
 Data can be logged for monitoring and future analysis.
-🛠️ Hardware Components
+
+ Hardware Components
 ESP32 Development Board
 DHT11 Temperature & Humidity Sensor
 Relay Module (5V/3.3V compatible)
@@ -34,7 +35,7 @@ Water Pump
 Power Supply
 Connecting Wires
 3D Printed Enclosure
-💻 Software & Technologies
+ Software & Technologies
 Programming Language: Python / Arduino C++
 Machine Learning: Support Vector Machine (SVM)
 IoT Platform: MQTT / HTTP (depending on implementation)
@@ -43,6 +44,18 @@ DHT sensor library
 WiFi.h
 scikit-learn (for SVM model training)
 ArduinoJson (optional)
+
+GSM Communication
+
+The GSM module enables:
+
+ Sending SMS alerts:
+Current temperature & humidity
+Irrigation status
+ GPRS data transmission to cloud platforms
+ Receiving remote commands:
+Turn pump ON/OFF
+Request system status
 
 Installation & Setup
 1. Hardware Setup
